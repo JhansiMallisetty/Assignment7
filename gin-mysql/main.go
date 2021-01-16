@@ -9,8 +9,8 @@ import (
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 )
 
-type User struct {
-	Id   int    `gorm:" AUTO_INCREMENT "` // increment
+	Id   int    `gorm:" AUTO_INCREMENT "` 
+         type User struct  {// increment
 	Name string `gorm:" size: 255 "`      // string default length is 255, the use of this tag Reset
 	Age  int
 }
@@ -22,7 +22,7 @@ var (
 
 func main() {
 	// link mysql
-	db, err = gorm.Open("mysql", "root:8603mysql@123@tcp(127.0.0.1:3307)/sandhya?parseTime=true")
+	db, err = gorm.Open("mysql", "root:8603mysql@123@tcp(127.0.0.1:3307)/jhansi?parseTime=true")
 	if err != nil {
 		panic(err)
 	} else {
