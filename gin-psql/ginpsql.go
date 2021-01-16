@@ -80,7 +80,7 @@ func DeleteProduct(c *gin.Context) {
 
 func main() {
 	// Dtabase connection
-	db, err := gorm.Open("postgres", "user=postgres password=sandy5353 dbname=text port=5432 sslmode=disable")
+	db, err := gorm.Open("postgres", "user=postgres password=jhans123 dbname=text port=5432 sslmode=disable")
 
 	if err != nil {
 		panic("Failed to connect to database!")
