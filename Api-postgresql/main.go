@@ -46,7 +46,7 @@ func main() {
 
 	router := mux.NewRouter()
 
-	db, err = gorm.Open("postgres", "host=localhost port=5432 user=postgres dbname=text sslmode=disable password=sandy5353")
+	db, err = gorm.Open("postgres", "host=localhost port=5432 user=postgres dbname=text sslmode=disable password=jhan123")
 
 	if err != nil {
 
